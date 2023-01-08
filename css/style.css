@@ -1,0 +1,104 @@
+/* width: auto;
+background-color: rgba(240, 240, 240, 0.699);
+  height: auto; */
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* 시계 */
+/* .item:nth-child(1) {
+  transform: translate(0px, 3px);
+} */
+/* 날씨랑사람 */
+.item:nth-child(2) {
+  transform: translate(0, 90px);
+}
+/* 투두리스트 */
+.item:nth-child(3) {
+  transform: translate(0, 120px);
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+span {
+  margin: 0;
+}
+li {
+  list-style-type: square;
+  font-size: 33px;
+}
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80%;
+}
+
+.input {
+  font-family: "Jua", "Anton", sans-serif;
+  width: 365px;
+  height: 32px;
+  font-size: 28px;
+  border: none;
+  background-color: transparent; /* transparent 투명하게 해줌  */
+  border: none;
+  border-bottom: 3px solid;
+  outline: none;
+}
+input:hover {
+  background-color: aliceblue;
+  transition: background-color 2s;
+}
+.input:nth-child(2) {
+  transform: translate(0px, -10px);
+}
+
+.hidden,
+#input-bt {
+  display: none;
+}
+
+#todo-list button {
+  background: none;
+  color: rgb(0, 0, 0);
+  border: 2px solid;
+  padding: 1px 2px;
+  transform: translate(7px, -7px);
+  transition: color 0.25s, border-color 0.45s;
+}
+
+#todo-list button:hover {
+  border-color: beige;
+  color: beige;
+  box-shadow: 3 0.5px 0.5px -0.4px wheat;
+}
+
+#weather {
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  height: 40px;
+}
+
+#name {
+  transform: translate(0px, -13px);
+}
+
+#clock {
+  font-size: 100px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 9px;
+  margin-bottom: 0;
+}
+#todo-list {
+  font-family: "Jua", "Anton", sans-serif;
+}
